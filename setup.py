@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='cipherlib',
-    version="0.1",
+    version="0.0.1",
     description='Block Ciphers',
     python_requires='>=3.6',
     author='MIEM',
