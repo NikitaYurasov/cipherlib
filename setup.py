@@ -9,10 +9,10 @@ setup(
     author_email='n.yurasov@yahoo.com',
     license='MIT',
     package_data={
-        'ciphers': ['configs/logging_config.json'],
+        'cipherlib': ['configs/logging_config.json'],
     },
     packages=find_packages(include=[
-        'ciphers', 'ciphers.*'
+        'cipherlib', 'cipherlib.*'
     ]),
     include_package_data=True,
     zip_safe=False
