@@ -1,7 +1,7 @@
 import numpy as np
 import scipy.stats as sts
 from tqdm import tqdm
-from numba import jit, boolean, int8, int64
+from numba import jit
 
 
 @jit(['int8[:](int8[:], int64[:, :], int64[:, :, :])'], fastmath=True)

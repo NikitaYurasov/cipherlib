@@ -1,4 +1,4 @@
-from BaseCipher import BaseCipher
+from .BaseCipher import BaseCipher
 
 import numpy as np
 from numba import jit, prange

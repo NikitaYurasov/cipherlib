@@ -1,9 +1,10 @@
-from BaseCipher import BaseCipher
+from .BaseCipher import BaseCipher
 
 import numpy as np
 import scipy.stats as sts
 from tqdm import tqdm
 from numba import jit
+
 
 @jit(['uint8[:](uint8[:])'])
 def hex_to_bin(hex_array):
@@ -17,6 +18,7 @@ def hex_to_bin(hex_array):
             hex_num //= 2
             p -= 1
     return bin_array
+
 
 @jit(['uint8[:](uint8[:])'])
 def hex_to_bin(hex_array):
@@ -459,7 +461,6 @@ class Blowfish(BaseCipher):
             encr_blocks[i] = temp[i] ^ plain_blocks[i]
         self.encr_blocks = encr_blocks
         return encr_blocks
-
 
 # cipher = Blowfish()
 # plaintext = np.array([0x37, 0x36, 0x35, 0x34, 0x33, 0x32, 0x31, 0x20, 0x4E, 0x6F, 0x77, 0x20, 0x69, 0x73, 0x20, 0x74,
