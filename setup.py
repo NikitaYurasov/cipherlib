@@ -15,7 +15,7 @@ setup(
         'cipherlib', 'cipherlib.*'
     ]),
     url='https://github.com/NikitaYurasov/cipherlib',
-    download_url='https://github.com/NikitaYurasov/cipherlib/archive/refs/tags/v0.0.1.tar.gz',
+    download_url='https://github.com/NikitaYurasov/cipherlib/archive/refs/tags/v0.0.2.tar.gz',
     include_package_data=True,
     zip_safe=False
 )
